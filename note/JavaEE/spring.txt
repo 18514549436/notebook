@@ -1,0 +1,15 @@
+spring di方式：
+    配置式
+        在类中声明属性，并且需要提供set方法,spring 的注入只认set方法，与属性无关
+        1. autowired ：
+            1. byType ：需要注意该接口只能在spring配置文件中有一个实例
+            2. byName ：根据配置的id寻找精确匹配，需注意bean id属性唯一。
+        2. property ：
+            根据name属性名进行注入
+        3. constructor ：构造注入 ，type会引起歧义，name不可作为注入引用依据，最好使用index，下标从0开始。
+        
+
+    注解式
+
+
+aop
